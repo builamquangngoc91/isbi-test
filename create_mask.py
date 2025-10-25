@@ -5,6 +5,8 @@ from PIL import Image
 import torch.nn.functional as F
 from torchvision import transforms
 from scipy.ndimage import gaussian_filter
+from huggingface_hub import snapshot_download
+
 
 # ---------------- CONFIG ---------------- #
 HF_TOKEN = os.getenv("HF_TOKEN")
