@@ -7,7 +7,7 @@ from torchvision import transforms
 from scipy.ndimage import gaussian_filter
 
 # ---------------- CONFIG ---------------- #
-HF_TOKEN = ""
+HF_TOKEN = os.getenv("HF_TOKEN")
 MODEL_REPO = "MahmoodLab/CONCH"
 MODEL_NAME = "conch_ViT-B-16"
 PATCH_SIZE = 16
